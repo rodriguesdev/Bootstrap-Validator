@@ -2,7 +2,14 @@
 @{
     ViewBag.Title = "Index";
 }
+
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
 <script src="~/Scripts/validator.js"></script>
+<script src="~/Scripts/validator.min.js"></script>
 
 <h2>Index</h2>
 
@@ -29,7 +36,7 @@
     <div class="form-group">
         <label for="inputConfirm" class="control-label">Confirme a Senha</label>
         <input type="password" class="form-control" id="inputConfirm" placeholder="Confirme sua Senha..."
-               data-match="#inputPassword" data-match-error="Atenção! As senhas não estão iguais." required>
+               data-match="#inputPassword" data-error="Por favor Preencha este campo." data-match-error="Atenção! As senhas não estão iguais." required>
         <div class="help-block with-errors"></div>
     </div>
 
